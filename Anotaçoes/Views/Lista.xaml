@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Anotaçoes.Views.Lista"
+             Title="Lista">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Label Text="Anotações"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   HorizontalOptions="CenterAndExpand" />
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="BuscaTitulo" Placeholder="Pesquise uma tarefa" TextChanged="Entry_TextChanged"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Filtrar por favoritos" FontSize="Medium"/>
+                <Switch x:Name="swFiltroFav" Toggled="swFiltroFav_Toggled" />
+            </StackLayout>
+            <ListView x:Name="ListaNotas" RowHeight="30" SeparatorColor="Black" Margin="15" ItemSelected="ListaNotas_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="{Binding Titulo,StringFormat='Tarefa: {0}'}"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

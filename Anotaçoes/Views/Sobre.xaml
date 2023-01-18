@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Anotaçoes.Views.Sobre"
+             Title="Sobre o app">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Sobre"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   VerticalOptions="Center" />
+            <Label Text="versão 0.1"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   VerticalOptions="Center" />
+            <Label Text="Autor Matheus Luiz Garcia"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   VerticalOptions="Center" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Anotaçoes.Views.PaginaPrincipal" IsPresented="True">
+    <FlyoutPage.Flyout>
+        <ContentPage Title="Menu">
+            <StackLayout VerticalOptions="Center" Margin="5">
+                <Button x:Name="btHome" Text="Home" Clicked="btHome_Clicked"/>
+                <Button x:Name="btCadastrar" Text="Cadastrar" Clicked="btCadastrar_Clicked"/>
+                <Button x:Name="btLista" Text="Lista" Clicked="btLista_Clicked"/>
+                <Button x:Name="btSobre" Text="Sobre" Clicked="btSobre_Clicked"/>
+            </StackLayout>
+        </ContentPage>
+    </FlyoutPage.Flyout>
+    <FlyoutPage.Detail>
+        <ContentPage Title="Página Principal">
+            <Label x:Name="testeDB" Text="Olá mundo" />
+        </ContentPage>
+    </FlyoutPage.Detail>
+</FlyoutPage>
